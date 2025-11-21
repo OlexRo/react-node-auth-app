@@ -1,0 +1,45 @@
+.footerQrCodeWrapper
+  width: 50%
+  display: flex
+  justify-content: space-between
+  transition: .4s all ease
+  @media (max-width: 1600px)
+    display: none
+  .footerQrCode
+    height: 290px
+    width: 240px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border-radius: 20px
+    background: rgba(30, 29, 29)
+    transition: .4s all ease
+    z-index: 1
+    &:hover
+      transform: scale(1.01)
+    .footerQrCodeIcon
+      height: 55px
+      width: 55px
+      display: flex
+      justify-content: center
+      align-items: center
+      background: rgba(255, 255, 255)
+      border-radius: 100%
+      cursor: pointer
+      transform: translateY(-35px)
+      transition: .4s all ease
+      &:hover
+        transform: translateY(-35px) scale(1.05)
+    .footerQrCodePhoto
+      border: 1px solid rgba(255, 255, 255)
+      width: 200px
+      height: 200px
+      border-radius: 20px
+      cursor: pointer
+      transform: translateY(-15px)
+    .footerQrCodeNickname
+      color: rgba(255, 255, 255)
+      text-transform: uppercase
+      transform: translateY(-5px)
+

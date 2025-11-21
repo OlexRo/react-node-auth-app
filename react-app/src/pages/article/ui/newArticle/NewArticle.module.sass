@@ -1,0 +1,72 @@
+//Обложка блока Новые статьи
+.articleNewWrapper
+  width: 100%
+  height: auto
+  display: flex
+  transition: .4s all ease
+  @media (max-width: 1300px)
+    flex-direction: column
+  .articleNewLeft
+    width: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    transition: .4s all ease
+  //Большая статья
+  .articleMajorCardTop
+    border-radius: 20px
+    margin-bottom: 10px
+    margin-top: 10px
+    padding: 0 0 50px 20px
+    width: 560px
+    height: 350px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: flex-start
+    color: rgba(255, 255, 255)
+    background: url('./../../../../asset/image/homePhoto/articleMajorPhoto/articleMajorArticleCardTopPhoto.png') 0/110% no-repeat
+    box-shadow: 10px 10px 19px 0 rgba(0, 0, 0, 0.28)
+    transition: .4s all ease
+    @media (max-width: 600px)
+      display: none
+    h3
+      margin: 0 0 0 20px
+      font-weight: 500
+      font-size: calc((100vw - 480px)/(1280 - 480) * (25 - 20) + 20px)
+      line-height: calc((100vw - 480px)/(1280 - 480) * (50 - 40) + 40px)
+      transition: .4s all ease
+  .articleNewCardBottom
+    display: flex
+    transition: .4s all ease
+    @media (max-width: 600px)
+      flex-direction: column
+      align-items: center
+      justify-content: center
+  .articleNewRight
+    width: 580px
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    transition: .4s all ease
+    @media (max-width: 600px)
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+.allArticleIcon
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-top: 15px
+  padding: 0
+  width: 270px
+  .allArticleIc
+    margin-right: 10px
+    width: auto
+    display: flex
+    justify-content: space-between
+
+.allArtStyle
+  font-size: 25px
+

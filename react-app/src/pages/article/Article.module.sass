@@ -1,0 +1,26 @@
+.articleWrapper
+  color: rgba(44, 44, 44)
+  background: rgb(241, 241, 241)
+  .articleContent
+    margin-bottom: 0
+    width: auto
+    height: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    transition: .4s all ease
+    cursor: pointer
+    @media (max-width: 1200px)
+      align-items: center
+    h3
+      margin-left: 10px
+      font-size: calc((100vw - 480px)/(1280 - 480) * (20 - 18) + 18px)
+      line-height: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+      transition: .4s all ease
+    .buttonMore
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+

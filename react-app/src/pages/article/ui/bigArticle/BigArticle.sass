@@ -1,0 +1,65 @@
+#bigArticleWrapper
+  margin: 10px 0 30px 0
+  border-radius: 20px
+  height: 300px
+  width: 1150px
+  display: flex
+  align-items: center
+  background: rgba(255, 255, 255)
+  box-shadow: 10px 10px 19px 0 rgba(0, 0, 0, 0.28)
+  transition: .4s all ease
+  cursor: pointer
+  overflow: hidden
+  text-overflow: ellipsis
+  &:hover
+    transform: scale(1.01)
+  @media (max-width: 1200px)
+    width: 560px
+    height: 250px
+  @media (max-width: 600px)
+    width: 270px
+    height: 350px
+    align-items: flex-start
+    flex-direction: column
+  img
+    border-radius: 20px 0 0 20px
+    height: 300px
+    width: 500px
+    object-fit: cover
+    transition: .4s all ease
+    @media (max-width: 1200px)
+      border-radius: 20px 0 0 20px
+      width: 250px
+      height: 250px
+    @media (max-width: 600px)
+      border-radius: 20px 20px 0 0
+      width: 270px
+      height: 180px
+  h5
+    margin: 0
+    padding: 0 0 0 0px
+    font-size: calc((100vw - 480px)/(1280 - 480) * (13 - 12) + 12px)
+    color: rgba(119, 119, 119)
+    transition: .4s all ease
+    @media (max-width: 600px)
+      padding: 0 0 10px 20px
+  h4
+    margin: 0 0 50px 20px
+    padding-top: 25px
+    width: 600px
+    height: 50px
+    font-weight: 600
+    font-size: calc((100vw - 480px)/(1280 - 480) * (20 - 18) + 18px)
+    transition: .4s all ease
+    overflow: hidden
+    text-overflow: ellipsis
+    @media (max-width: 1200px)
+      width: 270px
+    @media (max-width: 600px)
+      margin: 10px 0 10px 0
+      padding: 0 0 0 20px
+      height: 30px
+      width: 250px
+      font-weight: 500
+      font-size: calc((100vw - 480px)/(1280 - 480) * (25 - 20) + 20px)
+      line-height: calc((100vw - 480px)/(1280 - 480) * (50 - 25) + 25px)

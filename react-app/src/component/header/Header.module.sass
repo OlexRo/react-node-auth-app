@@ -1,0 +1,149 @@
+//Шапка сайта
+.headerWrapper
+  position: fixed
+  padding-left: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+  padding-right: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+  height: 80px
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: white
+  background: black
+  z-index: 10
+
+//Лошотип сайта
+.Logo
+  @media (max-width: 650px)
+    display: none
+.LogoMini
+  display: none
+  @media (max-width: 650px)
+    margin-right: 25px
+    display: flex
+
+//Иконки
+.Icon
+  margin: 15px
+  display: none
+  cursor: pointer
+  transition: all .4s ease
+  &:hover
+    transform: scale(1.12)
+  @media (max-width: 850px)
+    display: none
+.IconBurger
+  margin: 10px
+  cursor: pointer
+  transition: all .4s ease
+  &:hover
+    transform: scale(1.12)
+  @media (min-width: 850px)
+    display: none
+.IconUser
+  margin: 15px
+  display: flex
+  transition: all .4s ease
+  &:hover
+    transform: scale(1.12)
+
+#favoriteIcon
+  display: none
+
+//Навигация сайта
+.headerNavbarWrapper
+  height: inherit
+  display: none
+  align-items: center
+  transition: .4s all ease
+  @media (min-width: 850px)
+    display: flex
+  .headerNavbar
+    text-decoration: 90px
+    margin: 15px
+    height: inherit
+    display: flex
+    align-items: center
+    color: rgba(255, 255, 255)
+    transition: .4s all ease
+    &:hover
+      border-bottom: 5px solid rgba(255, 255, 255)
+
+//Навишация по сайту
+.headerNavigation
+  display: flex
+  //Поиск по сайту
+  .headerSearchWrapper
+    height: inherit
+    width: 250px
+    display: flex
+    align-items: center
+    justify-content: center
+    .headerSearch
+      all: inherit
+      width: inherit
+      height: 25px
+      color: rgba(255, 255, 255)
+      border-bottom: 1px solid rgba(255, 255, 255)
+      transition: 1s .1s ease
+      &:hover
+        border-bottom: 1px solid rgb(150, 150, 150)
+    .headerSearchIcon
+      font-size: 25px
+      transform: translate(-25px, -5px)
+
+//Новости и избарнное
+.headerNews
+  border-right: 1px solid white
+  display: flex
+  justify-content: center
+  align-items: center
+  @media (max-width: 850px)
+    display: none
+  .headerEmailWrapper
+    margin: 15px
+    height: 25px
+    display: flex
+    transition: all .4s ease
+    cursor: pointer
+    &:hover
+      transform: scale(1.12)
+    .headerEmailNotice
+      border: 1px solid black
+      border-radius: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 20px
+      height: 20px
+      color: black
+      background: white
+      transform: translate(40px, -5px)
+
+//Вход в личный кабинет
+.headerPrivateOffice
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: 10px
+  img
+    border-radius: 100%
+    width: 40px
+    height: 40px
+    object-fit: cover
+    cursor: pointer
+  .headerUser
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin: 15px
+    cursor: pointer
+    transition: all .4s ease
+    &:hover
+      transform: scale(1.03)
+    @media (max-width: 850px)
+      display: none
+    .headerUserName
+      margin-left: 15px
+      width: 50%
+

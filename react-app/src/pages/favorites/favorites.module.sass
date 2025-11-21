@@ -1,0 +1,71 @@
+.FavoritesWrapper
+    padding-top: 70px
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 95vh
+    height: auto
+    h2
+        margin-bottom: 20px
+
+.allArticleIcon
+    padding: 0 0 50px 20px
+    display: flex
+    margin-top: 30px
+    justify-content: space-between
+    align-items: center
+    width: 600px
+    @media (max-width: 1200px)
+        padding: 0 0 0 20px
+        width: 90%
+    @media (max-width: 600px)
+        padding: 0
+        width: 270px
+    .allArticleIc
+        margin-right: 10px
+        width: 80px
+        display: flex
+        justify-content: space-between
+        @media (max-width: 1200px)
+            width: 75px
+        @media (max-width: 600px)
+            width: 70px
+
+.allArtStyle
+    font-size: 30px
+    @media (max-width: 600px)
+        font-size: 25px
+
+//Навишация по сайту
+.headerNavigation
+    margin: 0 0 50px 0
+    display: flex
+    justify-content: center
+    width: 1150px
+    @media (max-width: 1200px)
+        width: 560px
+    @media (max-width: 600px)
+        width: 270px
+    //Поиск по сайту
+    .headerSearchWrapper
+        height: inherit
+        width: 500px
+        display: flex
+        align-items: center
+        justify-content: center
+        @media (max-width: 1200px)
+            width: 570px
+        @media (max-width: 600px)
+            width: 285px
+        .headerSearch
+            all: inherit
+            width: inherit
+            height: 25px
+            color: rgb(0, 0, 0)
+            border-bottom: 1px solid rgb(0, 0, 0)
+            transition: 1s .1s ease
+            &:hover
+                border-bottom: 1px solid rgb(150, 150, 150)
+        .headerSearchIcon
+            font-size: 25px
+            transform: translate(-25px, -5px)

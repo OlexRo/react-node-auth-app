@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap')
+
+//Вступительный контент
+.homeIntroductoryWrapper
+  width: 100%
+  display: flex
+  align-items: center
+  color: rgba(255, 255, 255)
+  background: rgba(0, 0, 0)
+  @media (max-width: 1600px)
+    justify-content: center
+    background: url('./../../asset/image/homePhoto/mainBackgroundPhoto.png')  0/200%
+  .homeIntroductoryLeftContent
+    display: flex
+    justify-content: center
+    align-items: center
+    @media (max-width: 1600px)
+      display: none
+  .homeIntroductoryRightContent
+    display: flex
+    flex-direction: column
+    @media (max-width: 1600px)
+      padding: calc((100vw - 480px)/(1280 - 480) * (70 - 30) + 30px)
+      justify-content: center
+    h1, h2
+      font-weight: normal
+      font-size: calc((100vw - 480px)/(1280 - 480) * (50 - 33) + 33px)
+      line-height: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+      transition: .4s all ease
+    h2
+      font-size: calc((100vw - 480px)/(1280 - 480) * (30 - 20) + 20px)
+    p
+      margin: 20px 0 40px 0
+      width: 400px
+      color: rgba(175, 175, 175)
+      line-height: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+      transition: .4s all ease
+    .homeIntroductoryButtons
+      width: 550px
+      display: flex
+      justify-content: space-between
+      @media (max-width: 660px)
+        width: 400px
+        height: 130px
+        align-items: center
+        flex-direction: column
+.homeIntroductoryPeopleWrapper
+  width: 100%
+  height: 110px
+  display: flex
+  justify-content: center
+  align-items: center
+  background: rgba(13, 13, 13)
+  @media (max-width: 1600px)
+    display: none
+  .homeIntroductoryPeople
+    width: 60%
+    display: flex
+    justify-content: space-between
+    color: rgba(255, 255, 255)
+    transition: .4s all ease
+    .homeIntroductoryPeopleTitles
+      font-family: 'Kaushan Script', cursive
+
+//Описание сайта по пунктам
+.descriptionWrapper
+  display: flex
+  .descriptionLeftContent
+    display: flex
+    justify-content: center
+    align-items: center
+    @media (max-width: 1300px)
+      display: none
+  .descriptionRightContent
+    width: 680px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    @media (max-width: 1300px)
+      width: auto
+    h3
+      margin: 0 0 20px 0
+      width: 595px
+      font-size: calc((100vw - 480px)/(1280 - 480) * (20 - 18) + 18px)
+      line-height: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+      transition: .4s all ease
+      @media (max-width: 1300px)
+        text-align: center
+        width: auto
+    >p
+      margin: 0 0 20px 0
+      width: 595px
+      line-height: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+      transition: .4s all ease
+      @media (max-width: 1300px)
+        text-align: center
+        width: auto
+    .descriptionRightContentItems
+      width: 595px
+      display: flex
+      flex-wrap: wrap
+      transition: .4s all ease
+      @media (max-width: 1300px)
+        justify-content: center
+        width: auto
+
+//Определение Миграции
+.aboutMigrationWrapper
+  display: flex
+  .aboutMigrationRightContent
+    display: block
+    @media (max-width: 1000px)
+      display: none
+  .aboutMigrationLeftContent
+    display: flex
+    align-items: center
+    flex-direction: column
+    h3
+      margin: 0 0 20px 50px
+      width: 600px
+      font-size: calc((100vw - 480px)/(1280 - 480) * (20 - 18) + 18px)
+      line-height: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+      transition: .4s all ease
+      @media (max-width: 1200px)
+        text-align: center
+        width: auto
+        margin: 0 0 20px 0
+    p
+      margin: 0 0 20px 0
+      width: 550px
+      line-height: calc((100vw - 480px)/(1280 - 480) * (35 - 30) + 30px)
+      transition: .4s all ease
+      @media (max-width: 1200px)
+        text-align: center
+        width: auto
+
+.clock
+  width: 270px
+  height: 270px
+  border-radius: 50%
+  border: 5px double #333
+  background: radial-gradient(#333, #000)
+  margin: 2rem auto
+  position: absolute
+  transform: translate(50px, 70px)
+
+.hourhand, .minutehand, .secondhand
+  position: absolute
+  background: white
+  transform-origin: bottom center
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3)
+
+.hourhand
+  width: 4%
+  height: 30%
+  left: calc(50% - (4% / 2))
+  top: calc(50% - 30%)
+
+.minutehand
+  width: 2%
+  height: 40%
+  left: calc(50% - (2% / 2))
+  top: calc(50% - 40%)
+
+.secondhand
+  width: 1%
+  height: 45%
+  background: #ffffff
+  left: calc(50% - (1% / 2))
+  top: calc(50% - 45%)

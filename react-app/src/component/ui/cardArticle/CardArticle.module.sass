@@ -1,0 +1,43 @@
+.cardArticleWrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  @media(max-width: 700px)
+    flex-direction: column
+  .cardArticleContent
+    border-radius: 20px
+    margin: 10px
+    width: 270px
+    height: 350px
+    display: flex
+    flex-direction: column
+    background: rgba(255, 255, 255)
+    box-shadow: 10px 10px 19px 0 rgba(0, 0, 0, 0.28)
+    transition: .4s all ease
+    @media(max-width: 700px)
+      &:nth-child(1)
+        margin-bottom: 20px
+    &:hover
+      transform: scale(1.01)
+    h5
+      margin: 20px 0 0 0
+      padding: 0 0 10px 20px
+      font-size: calc((100vw - 480px)/(1280 - 480) * (13 - 12) + 12px)
+      color: rgba(119, 119, 119)
+      transition: .4s all ease
+    h4
+      margin: 10px 0 10px 0
+      padding: 0 0 0 20px
+      height: 30px
+      font-weight: 500
+      font-size: 20px
+      line-height: 25px
+      transition: .4s all ease
+      overflow: hidden
+      text-overflow: ellipsis
+    img
+      border-radius: 20px 20px 0 0
+      width: 270px
+      height: 180px
+      object-fit: cover

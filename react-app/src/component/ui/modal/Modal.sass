@@ -1,0 +1,154 @@
+//Модальное окно
+.modalWrapper
+  position: fixed
+  height: 100vh
+  width: 100vw
+  display: flex
+  align-items: center
+  justify-content: center
+  background: rgba(0, 0, 0, 0.49)
+  opacity: 0
+  pointer-events: none
+  transition: .5s all ease
+  z-index: 3
+  &.active
+    opacity: 1
+    pointer-events: all
+  .modalContent
+    padding: 20px
+    border-radius: 20px
+    height: auto
+    width: 350px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: rgba(255, 255, 255)
+    transform: scale(0.5)
+    box-shadow: 10px 10px 19px 0 rgba(0, 0, 0, 0.28)
+    transition: .4s all ease
+    &.active
+      transform: scale(1)
+
+//Закрыть модальное окно
+.modalExit
+  padding: .5vh
+  margin: 10px
+  border: none
+  border-bottom: 1px solid rgba(204, 204, 204)
+  width: 30%
+  background: none
+  font-size: 15px
+  color: rgba(119, 119, 119)
+  transition: .4s all ease
+  &:hover
+    color: rgba(34, 34, 34)
+    border-bottom: 1px solid rgba(119, 119, 119)
+
+//Переключение между регистрацией и входом
+.modalButtonLogin
+  margin-top: 15px
+  border: none
+  background: none
+  color: rgba(119, 119, 119)
+  font-size: 15px
+  transition: all .5s ease
+  &:hover
+    color: rgba(34, 34, 34)
+
+.modalFormErrorValid
+  padding-top: 5px
+  color: red
+  width: 280px
+  font-size: 13px
+
+.modalFormFieldPasswordButton
+  position: absolute
+  border: none
+  background: none
+  transform: translateX(145px)
+
+.modalFormCheckbox
+  margin-bottom: 20px
+  width: 280px
+  display: flex
+  font-size: 14px
+  color: rgba(34, 34, 34)
+  input[type='checkbox']
+    margin-right: 10px
+    accent-color: black
+    transition: .4s all ease
+
+.forgotPassword
+  margin-bottom: 20px
+  border: none
+  background: none
+  font-size: 14px
+  color: rgba(119, 119, 119)
+  border-bottom: 1px solid rgba(204, 204, 204)
+  width: 150px
+  transition: all .5s ease
+  &:hover
+    color: rgba(34, 34, 34)
+    border-bottom: 1px solid rgba(119, 119, 119)
+
+//Офрмление модального окна
+.formWrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .label-before
+    padding: 0 6px
+    left: 15px
+    line-height: 20px
+    font-size: 12px
+    top: -10px
+    background: rgba(255, 255, 255)
+  .modalForm
+    margin-bottom: 20px
+    position: relative
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    .modalFormField
+      display: flex
+      align-items: center
+      justify-content: center
+      .modalFormIcon
+        transform: translateX(20px)
+    label::before
+      content: attr(title)
+      position: absolute
+      top: 0
+      left: 50px
+      line-height: 40px
+      font-size: 14px
+      color: rgba(119, 119, 119)
+      transition: 300ms all
+    input
+      border: none
+      border-bottom: 1px solid rgba(204, 204, 204)
+      width: 300px
+      line-height: 40px
+      padding: 0 30px
+      box-sizing: border-box
+      font-size: 14px
+      outline: none
+      background: rgba(255, 255, 255)
+      color: rgba(34, 34, 34)
+      &:valid + label::before
+        @extend .label-before
+        content: attr(data-title)
+      &:focus + label::before
+        @extend .label-before
+  .modalRegistrationButtonLogin
+    margin-top: 15px
+    border: none
+    background: none
+    color: rgba(119, 119, 119)
+    font-size: 15px
+    transition: all .5s ease
+    &:hover
+      color: rgba(34, 34, 34)

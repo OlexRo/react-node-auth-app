@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+
+.App_button
+  all: inherit
+  padding: 1.5vh
+  height: 45px
+  width: 100px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  color: rgba(255, 255, 255)
+  background: rgb(0, 0, 0)
+  cursor: pointer
+  border-radius: 20px
+  transition: all .5s ease
+  will-change: transform
+  font-size: calc((100vw - 480px)/(1280 - 480) * (16 - 14) + 14px)
+  font-family: 'Montserrat', sans-serif
+  &:hover
+    transform: scale(1.05)
